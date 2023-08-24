@@ -1,0 +1,114 @@
+
+/* -------------------------------------- */
+.topCorner{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+} 
+
+.topIcon{
+    font-size: 20px;
+    margin: 0 10px;
+    color: #444;
+    cursor: pointer;
+}
+/* ---------------TOP NAVBAR-------------------------- */
+/* ----------------------------------------- */
+.top{
+    width: 100%;
+    height: auto;
+    background-color: rgb(205, 201, 201);
+    position: sticky;
+    top: 0;
+
+    font-family: 'Josefin Sans', sans-serif;
+
+    display: flex;
+    align-items: center;
+}
+
+/* -------------top left------------------- */
+.topLeft{
+    /* flex: 3; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --------------menu------------------ */
+.menu{
+    background-color: white;
+    border-radius: 4px;
+    border: 2px solid #444;
+
+    position: relative;
+    top: 0px;
+    right: 15px;
+    cursor: pointer;
+
+    display: none;
+}
+
+.menu .line{
+    width: 33px;
+    height: 4px;
+    background-color: black;
+    border-radius: 3px;
+    margin: 5px 3px;
+}
+
+/* --------------top center------------------- */
+.topCenter{
+    flex: 6;
+}
+
+.topList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.topListItem{
+    margin-right:20px;
+    font-size: 20px;
+    font-weight: 400;
+
+    padding: 8px;
+}
+.topListItem:hover, .active{
+    cursor: pointer;
+    color: white;
+    background-color: #444;
+    border-radius: 10%;
+}
+/* ------------------top right-------------------------- */
+.topRight{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.topSearchIcon{
+    width: 20px;
+    height: 20px;
+    color: #444;
+    margin-left: 10px;
+}
+
+/* ------------------font families------------------------------------ */
+/*
+ font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Varela', sans-serif;
+font-family: 'Varela Round', sans-serif;
+ */

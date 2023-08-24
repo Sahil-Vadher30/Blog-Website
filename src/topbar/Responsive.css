@@ -1,0 +1,33 @@
+@media screen and (max-width:778px) {
+    /* .top{
+        flex-direction: column;
+    } */
+    
+    /* ------------------------ */
+    .topCenter{
+        background-color: rgb(205, 201, 201);
+        border: 2px solid black;
+
+        position: absolute;
+        top: 42px;
+        width: 99.45%;
+
+        display: none;
+    }
+    .topList{
+        flex-direction: column;
+        width: 200px;
+        margin: auto;
+    }
+
+
+    /* -----------top right---------- */
+    /* .topRight{
+        justify-content:flex-end;
+    } */
+
+    /* ---------menu--------- */
+    .menu{
+        display: block;
+    }
+}
