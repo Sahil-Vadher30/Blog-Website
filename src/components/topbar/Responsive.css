@@ -3,13 +3,13 @@
         flex-direction: column;
     } */
     
-    /* ------------------------ */
+    /* ---------topCenter--------------- */
     .topCenter{
         background-color: rgb(205, 201, 201);
         border: 2px solid black;
 
         position: absolute;
-        top: 42px;
+        top: 55px;
         width: 99.45%;
 
         display: none;
@@ -17,9 +17,23 @@
     .topList{
         flex-direction: column;
         width: 200px;
-        margin: auto;
+        width: 100%;
+        /* margin: auto; */
+        padding: 0;
+    }
+    .topListItem{
+        /* display: block; */
+        margin: 3px 0;
     }
 
+    .topListItem a{
+        padding: 2px 5px;
+        width: inherit;
+    }
+
+    .visible{
+        display: block;
+    }
 
     /* -----------top right---------- */
     /* .topRight{

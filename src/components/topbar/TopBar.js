@@ -1,26 +1,13 @@
 import React,{useState} from 'react'
 import './TopBar.css'
 import './Responsive.css'
+import { Link } from 'react-router-dom'
 
 export default function TopBar() {
-  var [display, setDisplay] = useState('block')
-
-  // if(window.innerWidth<778){
-  //   setDisplay('none')
-  // }
-  // else{
-  //   setDisplay('none')
-  // }
-
-  // var menu = document.getElementsByClassName('topRight')[0]
+  var [display, setDisplay] = useState(false);
   
   function toggle(){
-    if(display==='none'){
-      setDisplay('block')
-    }
-    else{ 
-      setDisplay('none') ;
-    }
+    setDisplay(!display);
   }
   
   return (
@@ -42,13 +29,23 @@ export default function TopBar() {
             <h1>BLOG</h1>
           </div>
 
-          <div className="topCenter" style={{display:display}}> 
+          <div className={`topCenter ${display? 'visible' : ''}`}  style={{display:display}}> 
             <ul className="topList">
-              <li className="topListItem">Home</li>
-              <li className="topListItem">About</li>
-              <li className="topListItem">Contect</li>
-              <li className="topListItem">Write</li>
-              <li className="topListItem">Logout</li>
+              <li className="topListItem">
+                <Link to='/'>HOME</Link>
+              </li>
+              <li className="topListItem">
+                <Link to='/'>ABOUT</Link>
+              </li>
+              <li className="topListItem">
+                <Link to='/'>CONTECT</Link>
+              </li>
+              <li className="topListItem">
+                <Link to='/write'>WRITE</Link>
+              </li>
+              <li className="topListItem">
+                <Link to='/'>LOGOUT</Link>
+              </li>
             </ul>
           </div>
 
