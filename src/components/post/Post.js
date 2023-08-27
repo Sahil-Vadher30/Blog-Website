@@ -7,7 +7,8 @@ function Post() {
       <div className="post">
         <img
           className="postImg"
-          src="https://www.google.com/imgres?imgurl=https%3A%2F%2Ffreepngimg.com%2Fsave%2F22514-sport-clipart%2F590x405&tbnid=uY-fhMcSH9v_wM&vet=12ahUKEwj9iKGYm_iAAxXyoOkKHfMSBgEQMygaegQIARBt..i&imgrefurl=https%3A%2F%2Ffreepngimg.com%2Fpng%2F22514-sport-clipart%2Fdownload&docid=xm0m1ZmbpN_c_M&w=590&h=405&q=sports%20image%20in%20jpg&ved=2ahUKEwj9iKGYm_iAAxXyoOkKHfMSBgEQMygaegQIARBt"
+          // src="https://www.google.com/imgres?imgurl=https%3A%2F%2Ffreepngimg.com%2Fsave%2F22514-sport-clipart%2F590x405&tbnid=uY-fhMcSH9v_wM&vet=12ahUKEwj9iKGYm_iAAxXyoOkKHfMSBgEQMygaegQIARBt..i&imgrefurl=https%3A%2F%2Ffreepngimg.com%2Fpng%2F22514-sport-clipart%2Fdownload&docid=xm0m1ZmbpN_c_M&w=590&h=405&q=sports%20image%20in%20jpg&ved=2ahUKEwj9iKGYm_iAAxXyoOkKHfMSBgEQMygaegQIARBt"
+          src="https://source.unsplash.com/random"
           alt="images"
         />
         <div className="postInfo">

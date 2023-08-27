@@ -1,0 +1,95 @@
+.singlePost{
+    flex: 9;
+
+    margin: 15px;
+}
+
+/* ------------Wrapper------------------- */
+.singlePostWrapper{
+    padding: 5px;
+    
+
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.singlePostImg{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+/* -------------Titel------------------ */
+.singlePostTitel{
+    text-align: center;
+    margin: 10px;
+    font-family: 'Lora', 'serif';
+    font-size: 28px;
+}
+
+.singlePostEdit{
+    float: right;
+    font-size: 20px;
+}
+
+.singlePostIcon{
+    margin-left: 10px;
+    cursor: pointer;
+
+    padding: 3px;
+}
+
+.singlePostIcon:first-child{
+    color: blue;
+}
+.singlePostIcon:last-child{
+    color: red;
+}
+.singlePostIcon:first-child:hover{
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+}
+.singlePostIcon:last-child:hover{
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+}
+
+
+/* -------------Info------------------ */
+.singlePostInfo{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #b39656;
+    font-family: 'Varela Round', sans-serif;
+    border-bottom: 2px solid #b39656;
+    border-radius: 5px;
+
+    padding: 0px 10px;
+}
+
+.singlePostAuthor{
+
+}
+
+.singlePostDate{
+
+}
+/* -------------Description------------------ */
+.singlePostDescription{
+    color: #666;
+    font-size: 22px;
+    line-height: 25px;
+
+    text-indent: 25px;
+    padding: 5px 25px;
+}
+
+/* .singlePostDescription::first-letter{
+    mar
+} */
+
+/* ------------------------------- */
+

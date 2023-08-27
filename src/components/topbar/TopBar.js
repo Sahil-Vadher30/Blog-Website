@@ -35,8 +35,11 @@ export default function TopBar() {
 
       <div className='top'>
           <div className="topLeft">
-            <img src="" alt="logo" />
-            <h1>LOGO</h1>
+            <img 
+              src="https://t3.ftcdn.net/jpg/03/36/03/58/360_F_336035825_Fp8RhUsacD8aAJDwk1oZO37VMJTTNJJS.jpg" 
+              alt="logo" 
+            />
+            <h1>BLOG</h1>
           </div>
 
           <div className="topCenter" style={{display:display}}> 

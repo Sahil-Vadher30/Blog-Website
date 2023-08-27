@@ -31,10 +31,20 @@
 
 /* -------------top left------------------- */
 .topLeft{
-    /* flex: 3; */
+    flex: 3;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.topLeft img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.topLeft h1{
+    padding-top: 6px;
 }
 
 /* --------------menu------------------ */
