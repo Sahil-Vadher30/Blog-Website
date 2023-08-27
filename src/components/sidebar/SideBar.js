@@ -7,7 +7,14 @@ function SideBar() {
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
         {/* image can be changed here */}
-        <img src="../templates/download.jpg"  alt=" image" />
+        <img 
+        // src="../templates/download.jpg"  
+        src="https://images.unsplash.com/photo-1480429370139-e0132c086e2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWFufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        alt=" image"
+        className="" 
+        />
+        {/* <img src=""  alt=" image" /> */}
+        {/* https://source.unsplash.com/random */}
         
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
