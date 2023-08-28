@@ -4,11 +4,15 @@ import './Responsive.css'
 import { Link } from 'react-router-dom'
 
 export default function TopBar() {
+  // ---------to toggle menu--------------------------
   var [display, setDisplay] = useState(false);
   
   function toggle(){
     setDisplay(!display);
   }
+  // --------------------------------------------------
+
+  var user = false;
   
   return (
     <>
@@ -43,20 +47,26 @@ export default function TopBar() {
               <li className="topListItem">
                 <Link to='/write'>WRITE</Link>
               </li>
-              <li className="topListItem">
-                <Link to='/'>LOGOUT</Link>
-              </li>
+              {
+                user &&
+                <li className="topListItem">
+                 <Link to='/'>LOGOUT</Link>
+                </li>
+              }
             </ul>
           </div>
 
-          {/* <div className="menu">
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-          </div> */}
-
           <div className="topRight">
-            <img className='topImg' src="https://source.unsplash.com/random" alt="" />
+            {
+              user ? (
+                <img className='topImg' src="https://source.unsplash.com/random" alt="" />
+              ) : (
+                <>
+                  <Link to='/login'>Login</Link>
+                  <Link to='/register'>Register</Link>
+                </>
+              )
+            }
             <i class="topSearchIcon fa-solid fa-magnifying-glass"></i>
           </div>
 
