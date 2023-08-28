@@ -62,8 +62,8 @@ export default function TopBar() {
                 <img className='topImg' src="https://source.unsplash.com/random" alt="" />
               ) : (
                 <>
-                  <Link to='/login'>Login</Link>
-                  <Link to='/register'>Register</Link>
+                  <Link className='loginBtn' to='/login'>Login</Link>
+                  <Link className='registerBtn' to='/register'>Register</Link>
                 </>
               )
             }

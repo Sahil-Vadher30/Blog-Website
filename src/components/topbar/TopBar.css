@@ -121,6 +121,31 @@
     border-radius: 50%;
 }
 
+.loginBtn{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+    padding: 6px 10px;
+    margin: 0 5px 0 0;;
+}:hover{
+    color: black;
+    background-color: white;
+}
+
+.registerBtn{
+    text-decoration: none;
+    color: black;
+    background-color: #dbd8d8;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 6px 10px;
+}:hover{
+    background-color: white;
+}
+
 .topSearchIcon{
     width: 20px;
     height: 20px;
