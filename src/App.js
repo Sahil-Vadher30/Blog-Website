@@ -12,6 +12,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Settings from "./pages/settings/Settings";
 
 
 
@@ -36,15 +37,14 @@ function App() {
           <Route 
             path="/write" 
             element={user ? <Write/> : <Register/>} />
-          {/* <Route 
+          <Route 
             path="/settings" 
-            element={user ? <Settings/> : <Register/>} /> */}
+            element={user ? <Settings/> : <Register/>} />
           <Route 
             path="/post/:postId" 
             element={<Single/>} />
 
         </Routes>
-
 
 
 
