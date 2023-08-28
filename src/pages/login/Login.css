@@ -21,6 +21,8 @@
     margin: 0 auto;
 
     margin: -103px auto 0 auto;
+}:hover{
+    background-color: transparent;
 }
 
 /* ----------------login form----------------------- */
