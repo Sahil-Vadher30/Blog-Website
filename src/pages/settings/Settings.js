@@ -16,7 +16,7 @@ function Settings() {
             <div className="settingsPP">
               {/* settingsPP : settings profile picture */}
               {/* insert profile image here  */}
-              <img src="" alt="profileimage" />
+              <img src="https://source.unsplash.com/random" alt="profileimage" />
               <label htmlFor="fileInput">
                 <i className=" settingsPPIcon   fa-regular fa-circle-user"></i>
               </label>
