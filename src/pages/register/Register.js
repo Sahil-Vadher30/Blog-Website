@@ -18,9 +18,7 @@ export default function Register() {
             <input type="password" className='registerInput' placeholder='Enter your password again...'/>
             <button className='registerButton'>Register</button>
 
-            <a className='registerLoginButton' href='#'>
-              <Link to='/login'>Already register? login here</Link>
-            </a>
+            <Link to='/login' className='registerLoginButton' >Already register? login here</Link>
         </form>
 
     </div>

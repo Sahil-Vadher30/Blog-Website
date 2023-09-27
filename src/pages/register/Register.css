@@ -70,7 +70,7 @@
 .registerLoginButton{
     color: blue;
     font-size: 16px;
-    font-weight: 150;
+    font-weight: bold;
     text-decoration: none;
     margin: auto;
 }

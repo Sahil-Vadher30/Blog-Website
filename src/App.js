@@ -21,7 +21,7 @@ function App() {
   const user = false;
   return (
     
-    <Router>
+    <Router basename="Blog-Website" >
         <TopBar/>
 
         <Routes>
