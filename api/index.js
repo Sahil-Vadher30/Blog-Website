@@ -1,5 +1,5 @@
-const expr = require('express');
-const app = expr();
+const express = require('express');
+const app = express();
 const multer = require('multer');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
@@ -7,9 +7,15 @@ const authRoute = require('./routes/auth');
 const userRoute  = require('./routes/User');
 const postRoute = require('./routes/Post');
 const categoryRoute = require('./routes/Category');
+const cors = require('cors');
+const path = require('path');
+// const body_parser = require('body-parser');
 
 // dotenv.config();
-app.use(expr.json())
+app.use(cors());
+// app.use(body_parser.json());
+app.use(express.json())
+app.use("/images", express.static(path.join(__dirname, "/images")));
 
 mongoose
 .connect("mongodb://127.0.0.1:27017/blog-website")

@@ -54,3 +54,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.link{
+    text-decoration: none;
+    color: black;
+}

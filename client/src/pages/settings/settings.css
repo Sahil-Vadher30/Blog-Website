@@ -39,6 +39,7 @@
 .settingsPP > img {
     width: 70px;
     height: 70px;
+    border: 2px solid black;
     border-radius: 20px;
     object-fit: cover;
 }
@@ -82,4 +83,5 @@
     background-color: teal;
     padding: 10px;
     margin-top: 20px ;
+    cursor: pointer;
 }

@@ -1,7 +1,8 @@
-import React,{useState} from 'react'
+import React,{useContext, useState} from 'react'
 import './TopBar.css'
 import './Responsive.css'
 import { Link } from 'react-router-dom'
+import { Context } from '../../context/Context';
 
 export default function TopBar() {
   // ---------to toggle menu--------------------------
@@ -12,15 +13,20 @@ export default function TopBar() {
   }
   // --------------------------------------------------
 
-  var user = false;
+  var { user, dispatch } = useContext(Context);
+  const PublicFolder = "http://localhost:5000/images/";
+
+  const handleLogout = () => {
+    dispatch({ type: "LOGOUT" });
+  };
   
   return (
     <>
       <div className="topCorner">
-        <i class="topIcon fa-brands fa-square-facebook"></i>
-        <i class="topIcon fa-brands fa-square-twitter"></i>
-        <i class="topIcon fa-brands fa-square-instagram"></i>
-        <i class="topIcon fa-brands fa-square-pinterest"></i>
+        <i className="topIcon fa-brands fa-square-facebook"></i>
+        <i className="topIcon fa-brands fa-square-twitter"></i>
+        <i className="topIcon fa-brands fa-square-instagram"></i>
+        <i className="topIcon fa-brands fa-square-pinterest"></i>
       </div>
 
 
@@ -50,7 +56,7 @@ export default function TopBar() {
               {
                 user &&
                 <li className="topListItem">
-                 <Link to='/'>LOGOUT</Link>
+                 <Link to='/' onClick={handleLogout} >LOGOUT</Link>
                 </li>
               }
             </ul>
@@ -59,7 +65,11 @@ export default function TopBar() {
           <div className="topRight">
             {
               user ? (
-                <img className='topImg' src="https://source.unsplash.com/random" alt="" />
+                <Link to={"/settings"} >
+                  <img className='topImg' 
+                       src={ user.profilePic ? (PublicFolder + user.profilePic) : "https://cdn-icons-png.flaticon.com/128/10628/10628940.png"} 
+                       alt="" />
+                </Link>
               ) : (
                 <>
                   <Link className='loginBtn' to='/login'>Login</Link>
@@ -67,7 +77,7 @@ export default function TopBar() {
                 </>
               )
             }
-            <i class="topSearchIcon fa-solid fa-magnifying-glass"></i>
+            <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
           </div>
 
           <div className="menu" onClick={toggle}>

@@ -55,15 +55,21 @@
     font-weight: bold;
     padding: 4px 5px;
     margin: 15px 0;
+    cursor: pointer;
 
     border: 3px solid black;
 }
 
-.loginButton:hover{
-    cursor: pointer;
+/* .loginButton:hover{
     color: black;
     background-color: white;
     border: 3px solid black;
+} */
+
+.loginButton:disabled{
+    cursor: not-allowed;
+    background-color: rgb(108, 108, 108);
+    border-color: rgb(108, 108, 108);
 }
 
 

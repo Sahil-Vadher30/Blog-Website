@@ -2,14 +2,16 @@ import React from "react";
 import "./Posts.css";
 import Post from "../post/Post";
 
-function Posts() {
+function Posts({posts}) {
   return (
     <div className="posts">
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+      {/* <h1>posts: {JSON.stringify(posts)}</h1> */}
+      {
+        posts.map( (p, id) => {
+
+          return <Post key={id} post={p} />
+        })
+      }
     </div>
   );
 }

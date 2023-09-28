@@ -18,12 +18,26 @@
     height: 300px;
     border-radius: 5px;
 }
-/* -------------Titel------------------ */
-.singlePostTitel{
+/* -------------Title------------------ */
+.singlePostTitle{
     text-align: center;
     margin: 10px;
     font-family: 'Lora', 'serif';
     font-size: 28px;
+}
+
+.singlePostTitleInput{
+    text-align: center;
+    display: block;
+    margin: 10px auto 25px;
+    width: 99%;
+    font-family: 'Lora', 'serif';
+    font-size: 28px;
+
+    color: gray;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
 }
 
 .singlePostEdit{
@@ -70,8 +84,8 @@
     padding: 0px 10px;
 }
 
-.singlePostAuthor{
-
+.singlePostAuthor .link{
+    color: inherit;
 }
 
 .singlePostDate{
@@ -90,6 +104,39 @@
 /* .singlePostDescription::first-letter{
     mar
 } */
+
+.singlePostDescriptionInput{
+    border: none;
+    display: block;
+    width: 93%;
+    margin: auto;
+
+    color: #666;
+    font-size: 22px;
+    line-height: 25px;
+
+    text-indent: 25px;
+    padding: 5px 25px;
+}
+
+.singlePostDescriptionInput:focus{
+    outline: none;
+}
+
+/* -------------Update button------------------ */
+.singlePostButton{
+    color: white;
+    background-color: teal;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px;
+
+    padding: 10px;
+    display: block;
+    margin: 25px 10px 5px auto;
+}
 
 /* ------------------------------- */
 

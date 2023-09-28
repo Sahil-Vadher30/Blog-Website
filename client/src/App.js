@@ -9,16 +9,17 @@ import Register from "./pages/register/Register";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Settings from "./pages/settings/Settings";
+import { useContext } from "react";
+import { Context } from "./context/Context";
 
 
 
 function App() {
 
-  const user = false;
+  const { user } = useContext(Context);
   return (
     
     <Router basename="Blog-Website" >
