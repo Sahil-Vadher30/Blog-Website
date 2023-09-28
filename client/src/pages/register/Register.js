@@ -9,7 +9,11 @@ export default function Register() {
 
         <form action="" className="registerForm">
             <label htmlFor="">User name:</label>
+<<<<<<< HEAD
             <input type="email" className='registerInput' placeholder='Enter your username...'/>
+=======
+            <input type="text" className='registerInput' placeholder='Enter your username...'/>
+>>>>>>> 10c748049e7257a95b658977414a241b588896b1
             <label htmlFor="">Email:</label>
             <input type="email" className='registerInput' placeholder='Enter your email...'/>
             <label htmlFor="">Password:</label>
