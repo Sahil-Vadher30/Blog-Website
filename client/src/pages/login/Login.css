@@ -1,0 +1,83 @@
+/* ----------------login----------------------- */
+.login{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.5))
+        /* ,url("https://media.istockphoto.com/id/1352170879/photo/white-gray-gradient-room-background.jpg?s=612x612&w=0&k=20&c=556JIHJ4nFH4gGbO3oF8-C0A7DVmtU26_WDIAo441IA="); */
+        ,url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdhbGxwYXBlciUyMDRrfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
+    background-position: center;
+    background-size: cover;
+}
+
+/* ----------------login title--------------------- */
+.loginTitle{
+    font-size: 40px;
+    display: block;
+    margin: 0 auto;
+
+    margin: -103px auto 0 auto;
+}
+
+/* ----------------login form----------------------- */
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    
+    box-shadow: 5px 5px 8px 4px black;
+    padding: 15px;
+    margin-top: 5px;
+
+    width: 233px;
+    
+}
+
+.loginForm > label{
+    margin: 10px 5px;
+}
+
+.loginInput{
+    background-color: white;
+    border: 1px solid gray;
+    /* border-radius: 0px; */
+    padding: 10px;
+}
+
+.loginButton{
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 4px 5px;
+    margin: 15px 0;
+
+    border: 3px solid black;
+}
+
+.loginButton:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+}
+
+
+/* --------------------------------------- */
+.loginRegisterButton{
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: auto;
+}
+
+.loginRegisterButton:hover{
+    text-decoration: underline;
+}
+
+/* --------------------------------------- */
